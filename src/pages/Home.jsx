@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <React.Fragment>
-            <div className="bg-[#dbd5cd] text-gray-700 px-40 grid grid-cols-2  py-16 m-auto">
-                <div className="flex flex-col gap-8">
+        <>
+            <div className="bg-[#dbd5cd] text-gray-700 px-4 lg:px-40 grid grid-cols-2 py-16 min-h-[400px] relative">
+                <div className="flex flex-col gap-8 w-screen">
                     <h2 className="text-[35px] font-medium">Calyco</h2>
-                    <p className="text-[18px] bg-blue-">
+                    <p className="text-[18px] w-[90%] max-w-[400px]">
                         We are a leading manufacturer of high-quality calcined petroleum
                         coke (CPC) and allied products based in Nagpur, India.
                     </p>
@@ -21,7 +21,7 @@ const Home = () => {
                         </Link>
                     </p>
                 </div>
-                <div className="w-100 h-100">
+                <div className="w-100 h-100 hidden md:block">
                     <img
                         src="/assets/logo.png"
                         alt="logo img"
@@ -32,7 +32,7 @@ const Home = () => {
                 </div>
             </div>
             <Footer />
-        </React.Fragment>
+        </>
     )
 }
 

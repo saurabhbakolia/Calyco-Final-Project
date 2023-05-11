@@ -5,8 +5,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
   return (
-    <Container fixed maxWidth={false} sx={{ minWidth: '100%' }} className='bg-black text-gray-300 min-h-[320px] fixed bottom-0 left-0'>
-      <Grid container spacing={10} className='w-full py-14 px-28'>
+    <Container fixed maxWidth={false} sx={{ minWidth: '100%', maxWidth: '100%' }} className='bg-black text-gray-300 h-fit inline-block'>
+      <Grid container spacing={10} className='w-full py-14 lg:px-28'>
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <Typography variant="h6" sx={{ margin: "15px" }} className="text-white border-b-2 border-gray-400 w-fit">
             Company
